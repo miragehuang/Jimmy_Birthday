@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+   <style>
+    body {
+    background-color: #FFDBDA;
+    width: 1320px;
+    /* height: 1024px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content {
+    background-image: url(https://img.onl/6hB7Sj);
+    background-repeat: no-repeat;
+    width: 1320px;
+    height: 796px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexslide {
+    width: 40%;
+    height: 700px;
+    margin: 60px 0px 0px 150px;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px #8d8d8b;
+}
+
+.slides {
+    list-style-type: none;
+    /* 移除列表项默认样式 */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* 设置图像列表高度为容器高度 */
+    animation: verticalScroll 15s infinite;
+    /* 应用垂直滚动动画 */
+}
+
+@keyframes verticalScroll {
+    0% {
+        transform: translateY(0);
+        /* 初始位置 */
+    }
+
+    100% {
+        transform: translateY(-80%);
+        /* 滚动到最后一个图像位置 */
+    }
+}
+
+.slides li {
+    height: 40%;
+    /* 设置列表项高度为容器高度 */
+}
+
+.slides li img {
+    width: 100%;
+    /* 图像填充列表项的高度 */
+    display: block;
+    /* 移除图像底部间隙 */
+    margin: 0 auto;
+    /* 水平居中图像 */
+}
+
+
+.text {
+    width: 600px;
+    line-height: 40px;
+    margin: 100px 200px 100px 200px;
+}
+
+.text>p {
+    font-size: 24px;
+}
+
+.sign>p {
+    font-size: 24px;
+    text-indent: 70%;
+    line-height: 10px;
+}
+
+.j-container{
+    /* display: flex;
+    flex-direction: row-reverse; */
+    width: 1320px;
+    /* height: 100px; */
+    margin: 0 auto;
+    /* background-color: goldenrod; */
+    margin-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+a{
+    display: block;
+    /* flex-direction: row-reverse; */
+    width: 40px;
+    padding-left: 20px;
+}
+
+nav .nav-close { 
+    display: block; font-size: 2em; color: #fff;
+    position: absolute; top: 10px; right: 10px; cursor: pointer; 
+  }
+  
+   </style>
+</head>
+<body>
+  <header>
+    <div class="j-container">
+<nav id="nav">
+    <i class="fa fa-times-circle nav-close" onclick="document.getElementById('nav').style.display='none';"></i>
+    <a href="index.html" class="active">
+        <img src="icon/card.svg" alt="">
+    </a>
+    <a href="2.content.html">
+        <img src="icon/letter.svg" alt="">
+    </a>
+    <a href="3.photo.html">
+        <img src="icon/photo.svg" alt="">
+    </a>
+    <a href="4.bless.html">
+        <img src="icon/love.svg" alt="">
+    </a>
+</nav>
+</div>
+</header>
+    <div class="content">
+        <div class="flexslide">
+            <ul class="slides">
+              <li>
+                <img src="ver_pho/0.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/1.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/2.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/3.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/4.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/5.jpg" />
+              </li>
+              <li>
+                <img src="ver_pho/6.jpg" />
+              </li>
+            </ul>
+          </div>
+        <div class="text">
+        <p>親愛的老公：</p>
+        <p>這幾年看著你的改變，從被動慢慢變為主動，往好的方向去努力，更甚的是，在追求主的道路上更加踏實了，這些都是主賜給我們的恩典！感謝主賜我一個這麼棒的老公，愛你！</p>
+        <p>　　生日快樂！</p>
+        <p>　　祝你滿有神的同在</p>
+        <p>　　平安喜樂的聖靈時時常伴！</p>
+        <div class="sign">
+            <p>愛你的老婆</p>
+            <p>2023.5.27</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

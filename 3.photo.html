@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photo</title>
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <style>
+    body {
+      background-color: #FFDBDA;
+      width: 1320px;
+      /* height: 1024px; */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .photo_album {
+      background-image: url(../card/photo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1320px;
+      height: 796px;
+      display: flex;
+      align-items: center;
+    }
+
+    #carousel-container {
+      width: 1320px;
+      /* 设置容器宽度 */
+      height: 50%;
+      overflow: hidden;
+      /* 隐藏超出容器宽度的内容 */
+      border-radius: 20px;
+      box-shadow: 10px 5px 5px #8d8d8b;
+    }
+
+
+    #image-list {
+      list-style-type: none;
+      /* 移除列表项默认样式 */
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      /* 防止换行 */
+      animation: horizontalScroll 10s infinite;
+      /* 应用水平滚动动画 */
+    }
+
+    @keyframes horizontalScroll {
+      0% {
+        transform: translateX(0);
+        /* 初始位置 */
+      }
+
+      100% {
+        transform: translateX(-800%);
+        /* 滚动到最后一个图像位置 */
+      }
+    }
+
+    #image-list li {
+      display: inline-block;
+      /* 图像水平排列 */
+      width: 100%;
+      /* 设置列表项宽度为容器宽度 */
+      vertical-align: bottom;
+      /* 图像顶部对齐 */
+    }
+
+    #image-list li img {
+      width: 40%;
+      /* 图像填满列表项的宽度 */
+      display: block;
+      /* 移除图像底部间隙 */
+      margin: 0 auto;
+      /* 水平居中图像 */
+    }
+
+    .j-container {
+      /* display: flex;
+    flex-direction: row-reverse; */
+      width: 1320px;
+      /* height: 100px; */
+      margin: 0 auto;
+      /* background-color: goldenrod; */
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+    }
+
+    a {
+      display: block;
+      /* flex-direction: row-reverse; */
+      width: 40px;
+      padding-left: 20px;
+    }
+
+    nav .nav-close {
+      display: block;
+      font-size: 2em;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="j-container">
+      <nav id="nav">
+        <i class="fa fa-times-circle nav-close" onclick="document.getElementById('nav').style.display='none';"></i>
+        <a href="index.html" class="active">
+          <img src="icon/card.svg" alt="">
+        </a>
+        <a href="2.content.html">
+          <img src="icon/letter.svg" alt="">
+        </a>
+        <a href="3.photo.html">
+          <img src="icon/photo.svg" alt="">
+        </a>
+        <a href="4.bless.html">
+          <img src="icon/love.svg" alt="">
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="photo_album">
+    <div id="carousel-container">
+      <ul id="image-list">
+        <li><img src="hor_pho/1.jpg" alt="Image 1"></li>
+        <li><img src="hor_pho/2.jpg" alt="Image 2"></li>
+        <li><img src="hor_pho/3.jpg" alt="Image 3"></li>
+        <li><img src="hor_pho/4.jpg" alt="Image 4"></li>
+        <li><img src="hor_pho/5.jpg" alt="Image 5"></li>
+        <li><img src="hor_pho/6.jpg" alt="Image 6"></li>
+        <li><img src="hor_pho/7.jpg" alt="Image 7"></li>
+        <li><img src="hor_pho/8.jpg" alt="Image 8"></li>
+        <li><img src="hor_pho/9.jpg" alt="Image 9"></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
